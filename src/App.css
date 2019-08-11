@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 350px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active {
+  background-color: rgba(255,255,219,1);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+#search > span {
+  position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.100rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    left: 635px;
+}
+div#search {
+  width: 400px;
+  border: 1px solid #101010;
+  margin: auto;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  border: none;
+  padding-left: 38px;
+}
+
+.cards {
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 393px;
+  margin: auto;
+  border-radius: 5px;
+  max-height: 500px;
+  overflow: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px 15px;
+  border-radius: 6px;
+  align-items: start;
+}
+
+.card .info {
+  padding-right: 5px;
+  width: calc(100% - 50px);
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.card > div:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+.card > div:nth-child(2) {
+  font-style: italic;
+  padding-bottom: 3px;
+}
+.card > div:nth-child(3) {
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-top: 3px;
+}
+.card > div:nth-child(4) {
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.card > div:nth-child(5) {
+  padding-top: 3px;
+}
+.card li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top: 1px solid #ccc;
+  display: none;
+}
+.card li:first-child{
+  display: list-item;
+  list-style: circle;
+}
